@@ -15,8 +15,8 @@
 | 飲食店詳細ページ表示 | GET | /restaurants/:name | restaurants#show |
 | 飲食店登録ページ表示 | GET | /restaurants/new | restaurants#new |
 | 飲食店登録処理 | POST | /restaurants | restaurants#create |
-| （本人）飲食店編集ページ表示 | GET |  /restaurants/mypage/edit | restaurants#edit |
-| （本人）飲食店更新処理 | PATCH、PUT | /restaurants/mypage | restaurants#update |
+| （本人）飲食店編集ページ表示 | GET | /mypage/restaurants/edit | restaurants#edit |
+| （本人）飲食店更新処理 | PATCH、PUT | /mypage/restaurants | restaurants#update |
 | （飲食店）投稿一覧ページ表示 | GET | /restaurants/:name/post | restaurants/post#index |
 | （飲食店）投稿詳細ページ表示 | GET | /restaurants/:name/post/:id | restaurants/post#show |
 | （飲食店）投稿登録ページ表示 | GET | /restaurants/:name/post/new | restaurants/post#new |
@@ -28,8 +28,8 @@
 | 宿泊施設詳細ページ表示 | GET | /hotels/:name | hotels#show |
 | 宿泊施設登録ページ表示 | GET | /hotels/new | hotels#new |
 | 宿泊施設登録処理 | POST | /hotels | hotels#create |
-| （本人）宿泊施設編集ページ表示 | GET |  /hotels/mypage/edit | hotels#edit |
-| （本人）宿泊施設更新処理 | PATCH、PUT | /hotels/mypage | hotels#update |
+| （本人）宿泊施設編集ページ表示 | GET | /mypage/hotels/edit | hotels#edit |
+| （本人）宿泊施設更新処理 | PATCH、PUT | /mypage/hotels | hotels#update |
 | （宿泊施設）投稿一覧ページ表示 | GET | /hotels/:name/post | hotels/post#index |
 | （宿泊施設）投稿詳細ページ表示 | GET | /hotels/:name/post/:id | hotels/post#show |
 | （宿泊施設）投稿登録ページ表示 | GET | /hotels/:name/post/new | hotels/post#new |
@@ -41,8 +41,8 @@
 | アクティビティ詳細ページ表示 | GET | /activities/:name | activities#show |
 | アクティビティ登録ページ表示 | GET | /activities/new | activities#new |
 | アクティビティ登録処理 | POST | /activities | activities#create |
-| （本人）アクティビティ編集ページ表示 | GET |  /activities/mypage/edit | activities#edit |
-| （本人）アクティビティ更新処理 | PATCH、PUT | /activities/mypage | activities#update |
+| （本人）アクティビティ編集ページ表示 | GET |  /mypage/activities/edit | activities#edit |
+| （本人）アクティビティ更新処理 | PATCH、PUT | /mypage/activities | activities#update |
 | （アクティビティ）投稿一覧ページ表示 | GET | /activities/:name/post | activities/post#index |
 | （アクティビティ）投稿詳細ページ表示 | GET | /activities/:name/post/:id | activities/post#show |
 | （アクティビティ）投稿登録ページ表示 | GET | /activities/:name/post/new | activities/post#new |
@@ -54,8 +54,8 @@
 | 温泉詳細ページ表示 | GET | /hot_springs/:name | hot_springs#show |
 | 温泉登録ページ表示 | GET | /hot_springs/new | hot_springs#new |
 | 温泉登録処理 | POST | /hot_springs | hot_springs#create |
-| （本人）温泉編集ページ表示 | GET |  /hot_springs/mypage/edit | hot_springs#edit |
-| （本人）温泉更新処理 | PATCH、PUT | /hot_springs/mypage | hot_springs#update |
+| （本人）温泉編集ページ表示 | GET | /mypage/hot_springs/edit | hot_springs#edit |
+| （本人）温泉更新処理 | PATCH、PUT | /mypage/hot_springs | hot_springs#update |
 | （温泉）投稿一覧ページ表示 | GET | /hot_springs/:name/post | hot_springs/post#index |
 | （温泉）投稿詳細ページ表示 | GET | /hot_springs/:name/post/:id | hot_springs/post#show |
 | （温泉）投稿登録ページ表示 | GET | /hot_springs/:name/post/new | hot_springs/post#new |
@@ -67,8 +67,8 @@
 | フォトスポット詳細ページ表示 | GET | /photospots/:name | photospots#show |
 | フォトスポット登録ページ表示 | GET | /photospots/new | photospots#new |
 | フォトスポット登録処理 | POST | /photospots | photospots#create |
-| （本人）フォトスポット編集ページ表示 | GET |  /photospots/mypage/edit | photospots#edit |
-| （本人）フォトスポット更新処理 | PATCH、PUT | /photospots/mypage | photospots#update |
+| （本人）フォトスポット編集ページ表示 | GET | /mypage/photospots/edit | photospots#edit |
+| （本人）フォトスポット更新処理 | PATCH、PUT | /mypage/photospots | photospots#update |
 | （フォトスポット）投稿一覧ページ表示 | GET | /photo_spots/:name/post | photo_spots/post#index |
 | （フォトスポット）投稿詳細ページ表示 | GET | /photo_spots/:name/post/:id | photo_spots/post#show |
 | （フォトスポット）投稿登録ページ表示 | GET | /photo_spots/:name/post/new | photo_spots/post#new |
@@ -80,8 +80,8 @@
 | スキー場詳細ページ表示 | GET | /ski_areas/:name | ski_areas#show |
 | スキー場登録ページ表示 | GET | /ski_areas/new | ski_areas#new |
 | スキー場登録処理 | POST | /ski_areas | ski_areas#create |
-| （本人）スキー場編集ページ表示 | GET |  /ski_areas/mypage/edit | ski_areas#edit |
-| （本人）スキー場更新処理 | PATCH、PUT | /ski_areas/mypage | ski_areas#update |
+| （本人）スキー場編集ページ表示 | GET | /mypage/ski_areas/edit | ski_areas#edit |
+| （本人）スキー場更新処理 | PATCH、PUT | /mypage/ski_areas | ski_areas#update |
 | （スキー場）投稿一覧ページ表示 | GET | /ski_areas/:name/post | ski_areas/post#index |
 | （スキー場）投稿詳細ページ表示 | GET | /ski_areas/:name/post/:id | ski_areas/post#show |
 | （スキー場）投稿登録ページ表示 | GET | /ski_areas/:name/post/new | ski_areas/post#new |
@@ -121,6 +121,6 @@
 | （管理者）フォトスポット削除処理 | DELETE | /admin/photospots/:name | admin/photospots#destroy |
 | （管理者）スキー場一覧ページ表示 | GET | /admin/ski_areas | admin/ski_areas#index |
 | （管理者）スキー場詳細ページ表示 | GET | /admin/ski_areas/:name | admin/ski_areas#show |
-| （管理者）スキー場編集ページ表示 | GET |  /admin/ski_areas/mypage/edit | admin/ski_areas#edit |
-| （管理者）スキー場更新処理 | PATCH、PUT | /admin/ski_areas/mypage | admin/ski_areas#update |
+| （管理者）スキー場編集ページ表示 | GET |  /admin/ski_areas/:name/edit | admin/ski_areas#edit |
+| （管理者）スキー場更新処理 | PATCH、PUT | /admin/ski_areas/:name | admin/ski_areas#update |
 | （管理者）スキー場削除処理 | DELETE | /admin/ski_areas/maypage | admin/ski_areas#destroy |
