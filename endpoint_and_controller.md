@@ -8,7 +8,7 @@
 | ログアウトする | DELETE | /logout | user_sessions#destroy |
 | （本人）ユーザ詳細ページ表示 | GET | /mypage/profile | mypage/profiles#show |
 | ユーザ登録ページ表示 | GET | mypage/profile/new | mypage/profiles#new |
-| ユーザ登録処理 | POST | /mypage/profile | mypage/profiles#create |
+| ユーザ登録処理 | POST | /mypage/profiles | mypage/profiles#create |
 | （本人）ユーザ編集ページ表示 | GET | /mypage/profile/edit | mypage/profiles#edit |
 | （本人）ユーザ更新処理 | PATCH、PUT | /mypage/profile | mypage/profiles#update |
 | 飲食店一覧ページ表示 | GET | /restaurants | restaurants#index |
