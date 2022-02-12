@@ -1,8 +1,8 @@
 | やりたいこと | HTTPメソッド | エンドポイント | コントローラ#アクション |
 | :--- | :--- | :--- | :--- |
 | ジャンル一覧のページを表示<br>（レストラン・宿泊施設・アクティビティなど） | GET | / | home#index |
-| お気に入りに登録する | POST | / | bookmark#create |
-| お気に入りから削除する | DELETE | / | bookmark#destory |
+| お気に入りに登録する | POST | /favorites | favorites#create |
+| お気に入りから削除する | DELETE | /favorites/:id | favorites#destory |
 | ログインページ表示 | GET | /login | user_sessions#new |
 | ログインする | POST | /login | user_sessions#create |
 | ログアウトする | DELETE | /logout | user_sessions#destroy |
