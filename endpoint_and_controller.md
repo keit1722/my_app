@@ -6,13 +6,13 @@
 | ログアウトする | DELETE | /logout | user_sessions#destroy |
 | （本人）ユーザ詳細ページ表示 | GET | /mypage/profile | mypage/profiles#show |
 | ユーザ登録ページ表示 | GET | mypage/profile/new | mypage/profiles#new |
-| ユーザ登録処理 | POST | /mypage/profiles | mypage/profiles#create |
+| ユーザ登録処理 | POST | /mypage/profile | mypage/profiles#create |
 | （本人）ユーザ編集ページ表示 | GET | /mypage/profile/edit | mypage/profiles#edit |
 | （本人）ユーザ更新処理 | PATCH、PUT | /mypage/profile | mypage/profiles#update |
 | 飲食店一覧ページ表示 | GET | /restaurants | restaurants#index |
 | 飲食店詳細ページ表示 | GET | /restaurants/:slug | restaurants#show |
 | 飲食店登録ページ表示 | GET | /mypage/restaurants/new | mypage/restaurants#new |
-| 飲食店登録処理 | POST | /mypage/restaurants | mypage/restaurants#create |
+| 飲食店登録処理 | POST | /mypage/restaurant | mypage/restaurants#create |
 | （本人）飲食店編集ページ表示 | GET | /mypage/restaurant/edit | mypage/restaurants#edit |
 | （本人）飲食店更新処理 | PATCH、PUT | /mypage/restaurant | mypage/restaurants#update |
 | （飲食店）投稿一覧ページ表示 | GET | /restaurants/:slug/posts | restaurants/posts#index |
@@ -27,7 +27,7 @@
 | 宿泊施設一覧ページ表示 | GET | /hotels | hotels#index |
 | 宿泊施設詳細ページ表示 | GET | /hotels/:slug | hotels#show |
 | 宿泊施設登録ページ表示 | GET | /mypage/hotels/new | mypage/hotels#new |
-| 宿泊施設登録処理 | POST | /mypage/hotels | mypage/hotels#create |
+| 宿泊施設登録処理 | POST | /mypage/hotel | mypage/hotels#create |
 | （本人）宿泊施設編集ページ表示 | GET | /mypage/hotel/edit | mypage/hotels#edit |
 | （本人）宿泊施設更新処理 | PATCH、PUT | /mypage/hotel | mypage/hotels#update |
 | （宿泊施設）投稿一覧ページ表示 | GET | /hotels/:slug/posts | hotels/posts#index |
@@ -42,7 +42,7 @@
 | アクティビティ一覧ページ表示 | GET | /activities | activities#index |
 | アクティビティ詳細ページ表示 | GET | /activities/:slug | activities#show |
 | アクティビティ登録ページ表示 | GET | /mypage/activities/new | mypage/activities#new |
-| アクティビティ登録処理 | POST | /mypage/activities | mypage/activities#create |
+| アクティビティ登録処理 | POST | /mypage/activity | mypage/activities#create |
 | （本人）アクティビティ編集ページ表示 | GET | /mypage/activity/edit | mypage/activities#edit |
 | （本人）アクティビティ更新処理 | PATCH、PUT | /mypage/activity | mypage/activities#update |
 | （アクティビティ）投稿一覧ページ表示 | GET | /activities/:slug/posts | activities/posts#index |
@@ -57,7 +57,7 @@
 | 温泉一覧ページ表示 | GET | /hot_springs | hot_springs#index |
 | 温泉詳細ページ表示 | GET | /hot_springs/:slug | hot_springs#show |
 | 温泉登録ページ表示 | GET | /mypage/hot_springs/new | mypage/hot_springs#new |
-| 温泉登録処理 | POST | /mypage/hot_springs | mypage/hot_springs#create |
+| 温泉登録処理 | POST | /mypage/hot_spring | mypage/hot_springs#create |
 | （本人）温泉編集ページ表示 | GET | /mypage/hot_spring/edit | mypage/hot_springs#edit |
 | （本人）温泉更新処理 | PATCH、PUT | /mypage/hot_spring | mypage/hot_springs#update |
 | （温泉）投稿一覧ページ表示 | GET | /hot_springs/:slug/posts | hot_springs/posts#index |
@@ -72,7 +72,7 @@
 | フォトスポット一覧ページ表示 | GET | /photospots | photospots#index |
 | フォトスポット詳細ページ表示 | GET | /photospots/:slug | photospots#show |
 | フォトスポット登録ページ表示 | GET | /mypage/photospots/new | mypage/photospots#new |
-| フォトスポット登録処理 | POST | /mypage/photospots | mypage/photospots#create |
+| フォトスポット登録処理 | POST | /mypage/photospot | mypage/photospots#create |
 | （本人）フォトスポット編集ページ表示 | GET | /mypage/photospot/edit | mypage/photospots#edit |
 | （本人）フォトスポット更新処理 | PATCH、PUT | /mypage/photospot | mypage/photospots#update |
 | （フォトスポット）投稿一覧ページ表示 | GET | /photo_spots/:slug/posts | photo_spots/posts#index |
@@ -87,7 +87,7 @@
 | スキー場一覧ページ表示 | GET | /ski_areas | ski_areas#index |
 | スキー場詳細ページ表示 | GET | /ski_areas/:slug | ski_areas#show |
 | スキー場登録ページ表示 | GET | /mypage/ski_areas/new | mypage/ski_areas#new |
-| スキー場登録処理 | POST | /mypage/ski_areas | mypage/ski_areas#create |
+| スキー場登録処理 | POST | /mypage/ski_area | mypage/ski_areas#create |
 | （本人）スキー場編集ページ表示 | GET | /mypage/ski_area/edit | mypage/ski_areas#edit |
 | （本人）スキー場更新処理 | PATCH、PUT | /mypage/ski_area | mypage/ski_areas#update |
 | （スキー場）投稿一覧ページ表示 | GET | /ski_areas/:slug/posts | ski_areas/posts#index |
