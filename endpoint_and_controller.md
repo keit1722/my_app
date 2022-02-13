@@ -1,8 +1,6 @@
 | やりたいこと | HTTPメソッド | エンドポイント | コントローラ#アクション |
 | :--- | :--- | :--- | :--- |
 | ジャンル一覧のページを表示<br>（レストラン・宿泊施設・アクティビティなど） | GET | / | home#index |
-| お気に入りに登録する | POST | /favorites | favorites#create |
-| お気に入りから削除する | DELETE | /favorites/:id | favorites#destory |
 | ログインページ表示 | GET | /login | user_sessions#new |
 | ログインする | POST | /login | user_sessions#create |
 | ログアウトする | DELETE | /logout | user_sessions#destroy |
@@ -24,6 +22,8 @@
 | （飲食店）投稿編集ページ表示 | GET | /mypage/restaurant/posts/:id/edit | mypage/restaurants/posts#edit |
 | （飲食店）投稿更新処理 | PATCH、PUT | /mypage/restaurant/posts/:id | mypage/restaurants/posts#update |
 | （飲食店）投稿削除処理 | DELETE | /mypage/restaurant/posts/:id | mypage/restaurants/posts#destroy |
+| お気入りに飲食店登録 | POST | /restaurants/:slug/favorite | restaurants/favorites#create |
+| お気入りから飲食店削除 | DELETE | /restaurants/:slug/favorite | restaurants/favorites#destroy |
 | 宿泊施設一覧ページ表示 | GET | /hotels | hotels#index |
 | 宿泊施設詳細ページ表示 | GET | /hotels/:slug | hotels#show |
 | 宿泊施設登録ページ表示 | GET | /mypage/hotels/new | mypage/hotels#new |
@@ -37,6 +37,8 @@
 | （宿泊施設）投稿編集ページ表示 | GET | /mypage/hotel/posts/:id/edit | mypage/hotels/posts#edit |
 | （宿泊施設）投稿更新処理 | PATCH、PUT | /mypage/hotel/posts/:id | mypage/hotels/posts#update |
 | （宿泊施設）投稿削除処理 | DELETE | /mypage/hotel/posts/:id | mypage/hotels/posts#destroy |
+| お気入りに宿泊施設登録 | POST | /hotels/:slug/favorite | hotels/favorites#create |
+| お気入りから宿泊施設削除 | DELETE | /hotels/:slug/favorite | hotels/favorites#destroy |
 | アクティビティ一覧ページ表示 | GET | /activities | activities#index |
 | アクティビティ詳細ページ表示 | GET | /activities/:slug | activities#show |
 | アクティビティ登録ページ表示 | GET | /mypage/activities/new | mypage/activities#new |
@@ -50,6 +52,8 @@
 | （アクティビティ）投稿編集ページ表示 | GET | /mypage/activity/posts/:id/edit | mypage/activities/posts#edit |
 | （アクティビティ）投稿更新処理 | PATCH、PUT | /mypage/activity/posts/:id | mypage/activities/posts#update |
 | （アクティビティ）投稿削除処理 | DELETE | /mypage/activity/posts/:id | mypage/activities/posts#destroy |
+| お気入りにアクティビティ登録 | POST | /activities/:slug/favorite | activities/favorites#create |
+| お気入りからアクティビティ削除 | DELETE | /activities/:slug/favorite | activities/favorites#destroy |
 | 温泉一覧ページ表示 | GET | /hot_springs | hot_springs#index |
 | 温泉詳細ページ表示 | GET | /hot_springs/:slug | hot_springs#show |
 | 温泉登録ページ表示 | GET | /mypage/hot_springs/new | mypage/hot_springs#new |
@@ -63,6 +67,8 @@
 | （温泉）投稿編集ページ表示 | GET | /mypage/hot_spring/posts/:id/edit | mypage/hot_springs/posts#edit |
 | （温泉）投稿更新処理 | PATCH、PUT | /mypage/hot_spring/posts/:id | mypage/hot_springs/posts#update |
 | （温泉）投稿削除処理 | DELETE | /mypage/hot_spring/posts/:id | mypage/hot_springs/posts#destroy |
+| お気入りに温泉登録 | POST | /hot_springs/:slug/favorite | hot_springs/favorites#create |
+| お気入りから温泉削除 | DELETE | /hot_springs/:slug/favorite | hot_springs/favorites#destroy |
 | フォトスポット一覧ページ表示 | GET | /photospots | photospots#index |
 | フォトスポット詳細ページ表示 | GET | /photospots/:slug | photospots#show |
 | フォトスポット登録ページ表示 | GET | /mypage/photospots/new | mypage/photospots#new |
@@ -76,6 +82,8 @@
 | （フォトスポット）投稿編集ページ表示 | GET | /mypage/photo_spot/posts/:id/edit | mypage/photo_spots/posts#edit |
 | （フォトスポット）投稿更新処理 | PATCH、PUT | /mypage/photo_spot/posts/:id | mypage/photo_spots/posts#update |
 | （フォトスポット）投稿削除処理 | DELETE | /mypage/photo_spot/posts/:id | mypage/photo_spots/posts#destroy |
+| お気入りにフォトスポット登録 | POST | /photospots/:slug/favorite | photospots/favorites#create |
+| お気入りからフォトスポット削除 | DELETE | /photospots/:slug/favorite | photospots/favorites#destroy |
 | スキー場一覧ページ表示 | GET | /ski_areas | ski_areas#index |
 | スキー場詳細ページ表示 | GET | /ski_areas/:slug | ski_areas#show |
 | スキー場登録ページ表示 | GET | /mypage/ski_areas/new | mypage/ski_areas#new |
@@ -89,6 +97,8 @@
 | （スキー場）投稿編集ページ表示 | GET | /mypage/ski_area/posts/:id/edit | mypage/ski_areas/posts#edit |
 | （スキー場）投稿更新処理 | PATCH、PUT | /mypage/ski_area/posts/:id | mypage/ski_areas/posts#update |
 | （スキー場）投稿削除処理 | DELETE | /mypage/ski_area/posts/:id | mypage/ski_areas/posts#destroy |
+| お気入りにスキー場登録 | POST | /ski_areas/:slug/favorite | ski_areas/favorites#create |
+| お気入りからスキー場削除 | DELETE | /ski_areas/:slug/favorite | ski_areas/favorites#destroy |
 | （管理者）ユーザ一覧ページ表示 | GET | /admin/users | admin/users#index |
 | （管理者）ユーザ詳細ページ表示 | GET | /admin/users/:username | admin/users#show |
 | （管理者）ユーザ編集ページ表示 | GET | /admin/users/:username/edit | admin/users#edit |
