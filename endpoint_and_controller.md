@@ -11,7 +11,7 @@
 | （本人）ユーザ更新処理 | PATCH、PUT | /mypage/profile | mypage/profiles#update |
 | 飲食店一覧ページ表示 | GET | /restaurants | restaurants#index |
 | 飲食店詳細ページ表示 | GET | /restaurants/:slug | restaurants#show |
-| 飲食店登録ページ表示 | GET | /restaurants/new | restaurants#new |
+| 飲食店登録ページ表示 | GET | /mypage/restaurants/new | restaurants#new |
 | 飲食店登録処理 | POST | /mypage/restaurant | mypage/restaurants#create |
 | （本人）飲食店編集ページ表示 | GET | /mypage/restaurant/edit | mypage/restaurants#edit |
 | （本人）飲食店更新処理 | PATCH、PUT | /mypage/restaurant | mypage/restaurants#update |
@@ -26,7 +26,7 @@
 | お気入りから飲食店削除 | DELETE | /restaurants/:slug/favorite | restaurants/favorites#destroy |
 | 宿泊施設一覧ページ表示 | GET | /hotels | hotels#index |
 | 宿泊施設詳細ページ表示 | GET | /hotels/:slug | hotels#show |
-| 宿泊施設登録ページ表示 | GET | /hotels/new | hotels#new |
+| 宿泊施設登録ページ表示 | GET | /mypage/hotels/new | hotels#new |
 | 宿泊施設登録処理 | POST | /mypage/hotel | mypage/hotels#create |
 | （本人）宿泊施設編集ページ表示 | GET | /mypage/hotel/edit | mypage/hotels#edit |
 | （本人）宿泊施設更新処理 | PATCH、PUT | /mypage/hotel | mypage/hotels#update |
@@ -41,7 +41,7 @@
 | お気入りから宿泊施設削除 | DELETE | /hotels/:slug/favorite | hotels/favorites#destroy |
 | アクティビティ一覧ページ表示 | GET | /activities | activities#index |
 | アクティビティ詳細ページ表示 | GET | /activities/:slug | activities#show |
-| アクティビティ登録ページ表示 | GET | /activities/new | activities#new |
+| アクティビティ登録ページ表示 | GET | /mypage/activities/new | activities#new |
 | アクティビティ登録処理 | POST | /mypage/activity | mypage/activities#create |
 | （本人）アクティビティ編集ページ表示 | GET | /mypage/activity/edit | mypage/activities#edit |
 | （本人）アクティビティ更新処理 | PATCH、PUT | /mypage/activity | mypage/activities#update |
@@ -56,7 +56,7 @@
 | お気入りからアクティビティ削除 | DELETE | /activities/:slug/favorite | activities/favorites#destroy |
 | 温泉一覧ページ表示 | GET | /hot_springs | hot_springs#index |
 | 温泉詳細ページ表示 | GET | /hot_springs/:slug | hot_springs#show |
-| 温泉登録ページ表示 | GET | /hot_springs/new | hot_springs#new |
+| 温泉登録ページ表示 | GET | /mypage/hot_springs/new | hot_springs#new |
 | 温泉登録処理 | POST | /mypage/hot_spring | mypage/hot_springs#create |
 | （本人）温泉編集ページ表示 | GET | /mypage/hot_spring/edit | mypage/hot_springs#edit |
 | （本人）温泉更新処理 | PATCH、PUT | /mypage/hot_spring | mypage/hot_springs#update |
@@ -71,7 +71,7 @@
 | お気入りから温泉削除 | DELETE | /hot_springs/:slug/favorite | hot_springs/favorites#destroy |
 | フォトスポット一覧ページ表示 | GET | /photospots | photospots#index |
 | フォトスポット詳細ページ表示 | GET | /photospots/:slug | photospots#show |
-| フォトスポット登録ページ表示 | GET | /photospots/new | mypage/photospots#new |
+| フォトスポット登録ページ表示 | GET | /mypage/photospots/new | mypage/photospots#new |
 | フォトスポット登録処理 | POST | /mypage/photospot | /photospots#create |
 | （本人）フォトスポット編集ページ表示 | GET | /mypage/photospot/edit | mypage/photospots#edit |
 | （本人）フォトスポット更新処理 | PATCH、PUT | /mypage/photospot | mypage/photospots#update |
@@ -86,7 +86,7 @@
 | お気入りからフォトスポット削除 | DELETE | /photospots/:slug/favorite | photospots/favorites#destroy |
 | スキー場一覧ページ表示 | GET | /ski_areas | ski_areas#index |
 | スキー場詳細ページ表示 | GET | /ski_areas/:slug | ski_areas#show |
-| スキー場登録ページ表示 | GET | /ski_areas/new | ski_areas#new |
+| スキー場登録ページ表示 | GET | /mypage/ski_areas/new | ski_areas#new |
 | スキー場登録処理 | POST | /mypage/ski_area | mypage/ski_areas#create |
 | （本人）スキー場編集ページ表示 | GET | /mypage/ski_area/edit | mypage/ski_areas#edit |
 | （本人）スキー場更新処理 | PATCH、PUT | /mypage/ski_area | mypage/ski_areas#update |
