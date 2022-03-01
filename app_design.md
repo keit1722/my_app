@@ -7,7 +7,13 @@
 
 # ER図
 
-![](https://gyazo.com/1820804839666826066a9a32d855f7b2.png)
+PNG画像
+
+![er](https://user-images.githubusercontent.com/87513649/156182690-7781e1b0-6db5-4528-af63-e200473fd28e.png)
+
+Googleドライブの共有リンク
+
+https://drive.google.com/file/d/1ifnNAErnCRaI7kA8Hbft0FTlAH989-DQ/view?usp=sharing
 
 # テーブル設計
 
