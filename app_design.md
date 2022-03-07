@@ -9,11 +9,11 @@
 
 PNG画像
 
-![er](https://user-images.githubusercontent.com/87513649/156182690-7781e1b0-6db5-4528-af63-e200473fd28e.png)
+![er](https://user-images.githubusercontent.com/87513649/157058124-909fa3a0-26d5-4898-adc1-64080c16623e.png)
 
 Googleドライブの共有リンク
 
-https://drive.google.com/file/d/1ifnNAErnCRaI7kA8Hbft0FTlAH989-DQ/view?usp=sharing
+https://drive.google.com/file/d/1XXSqXoqfMiqjdn02GbP9M8J6J6G1OLDh/view?usp=sharing
 
 # テーブル設計
 
@@ -28,6 +28,7 @@ https://drive.google.com/file/d/1ifnNAErnCRaI7kA8Hbft0FTlAH989-DQ/view?usp=shari
 | user_first_name | string | null: false | |
 | user_email | string | null: false, index: { unique: true } | |
 | slug | string | null: false, index: { unique: true } | |
+| uuid | string | null: false, index: { unique: true } | |
 
 ### 申請アクション
 
@@ -240,6 +241,7 @@ https://drive.google.com/file/d/1ifnNAErnCRaI7kA8Hbft0FTlAH989-DQ/view?usp=shari
 | postable_type | | | ポリモーフィック |
 | title | string | null: false | |
 | body | text | null: false | |
+| status | integer | | { published: 0, draft: 1 } |
 
 ### 通知
 
@@ -263,7 +265,7 @@ https://drive.google.com/file/d/1ifnNAErnCRaI7kA8Hbft0FTlAH989-DQ/view?usp=shari
 
 | やりたいこと | HTTPメソッド | エンドポイント | コントローラ#アクション |
 | :--- | :--- | :--- | :--- |
-| ジャンル一覧のページを表示<br>（レストラン・宿泊施設・アクティビティなど） | GET | / | home#index |
+| ジャンル一覧のページを表示<br>（レストラン・宿泊施設・アクティビティなど） | GET | / | top#index |
 | ログインページ表示 | GET | /login | sessions#new |
 | ログインする | POST | /login | sessions#create |
 | ログアウトする | DELETE | /logout | sessions#destroy |
